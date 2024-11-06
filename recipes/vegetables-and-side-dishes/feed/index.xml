@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Vegetables and Side Dishes &#8211; Rosa&#039;s Recipes</title>
+	<atom:link href="https://rosa-ammala.github.io/rosas-recipes/recipes/vegetables-and-side-dishes/feed/" rel="self" type="application/rss+xml" />
+	<link>https://rosa-ammala.github.io/rosas-recipes</link>
+	<description>Recipes</description>
+	<lastBuildDate>Thu, 31 Oct 2024 12:21:33 +0000</lastBuildDate>
+	<language>fi</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+	<item>
+		<title>Garlic Roasted Broccoli</title>
+		<link>https://rosa-ammala.github.io/rosas-recipes/recipe/garlic-roasted-broccoli/</link>
+					<comments>https://rosa-ammala.github.io/rosas-recipes/recipe/garlic-roasted-broccoli/#respond</comments>
+		
+		<dc:creator><![CDATA[root]]></dc:creator>
+		<pubDate>Thu, 31 Oct 2024 12:21:31 +0000</pubDate>
+				<guid isPermaLink="false">https://rosa-ammala.github.io/rosas-recipes/?post_type=recipe_card#038;p=272</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>https://rosa-ammala.github.io/rosas-recipes/recipe/garlic-roasted-broccoli/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Honey-Glazed Carrots</title>
+		<link>https://rosa-ammala.github.io/rosas-recipes/recipe/honey-glazed-carrots/</link>
+					<comments>https://rosa-ammala.github.io/rosas-recipes/recipe/honey-glazed-carrots/#respond</comments>
+		
+		<dc:creator><![CDATA[root]]></dc:creator>
+		<pubDate>Thu, 31 Oct 2024 11:52:12 +0000</pubDate>
+				<guid isPermaLink="false">https://rosa-ammala.github.io/rosas-recipes/?post_type=recipe_card#038;p=266</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>https://rosa-ammala.github.io/rosas-recipes/recipe/honey-glazed-carrots/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
