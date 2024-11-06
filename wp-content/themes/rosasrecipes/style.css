@@ -1,0 +1,368 @@
+@import url("C:/xampp/htdocs/wordpress2/wp-content/plugins/recipe-cards/css/recipe-cards.css");
+/*
+Theme name: rosasrecipes
+Theme author: Rosa Ämmälä
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(226, 208, 182);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: monospace;
+}
+
+#title-to-hide {
+    display: none;
+}
+
+/* navigation */
+#top-navi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 40px;
+}
+
+#top-navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#top-navi ul li {
+    position: relative;
+    margin: 0 5px;
+}
+
+#top-navi > div > ul > li:first-child {
+    display: none;
+}
+
+#top-navi ul li a {
+    text-decoration: none;
+    background: rgba(93, 69, 50);
+    color: rgba(226, 208, 182);
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#top-navi ul li a:hover {
+    color: rgba(169, 116, 55);
+}
+
+#top-navi ul li.current-menu-item > a:hover,
+#top-navi ul li.current-category-parent > a:hover,
+#top-navi ul li.current-post-ancestor > a:hover {
+    background-color: rgba(169, 116, 55);
+}
+
+#top-navi .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    margin: 0;
+}
+
+#top-navi ul li:hover .sub-menu {
+    display: block;
+}
+
+#top-navi .sub-menu li {
+    background-color: rgba(93, 69, 50);
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+
+#top-navi ul li:nth-child(3):hover {
+    min-width: 160px;
+}
+
+#top-navi ul li:nth-child(3) .sub-menu {
+    min-width: 100%;
+}
+
+#top-navi ul li.current-menu-item > a,
+#top-navi ul li.current-category-parent > a,
+#top-navi ul li.current-post-ancestor > a {
+    background-color: rgba(198, 160, 108);
+    border: 3px solid rgba(93, 69, 50);
+    color: rgba(93, 69, 50);
+    padding: 7px 20px;
+}
+
+#top-navi .sub-menu li:first-child.current-menu-item > a,
+#top-navi .sub-menu li:first-child.current-category-parent > a,
+#top-navi .sub-menu li:first-child.current-post-ancestor > a {
+    border-top: none;
+}
+
+/* header */
+#site-header {
+    background: url(images/banner.jpg);
+    padding: 95px 20px 50px 20px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+#site-header h1 {
+    color: rgba(226, 208, 182);
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px rgba(93, 69, 50);
+}
+
+/* content */
+#content {
+    width: 70%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+#content-single {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#content-single article {
+    padding-left: 25px;
+}
+
+#content main {
+    min-height: 70vh;
+    padding: 15px;
+}
+
+#content main h2 a, #content main p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#content main h2 a:hover, #content main p a:hover {
+    color: rgba(169, 116, 55);
+}
+
+/* single.php */
+.recipe-meta {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.meta-item h3 {
+    margin: 0 10px 0 0;
+}
+
+.meta-item p {
+    margin: 0;
+}
+
+#recipe-content li {
+    margin-bottom: 10px;
+}
+
+.recipe-thumbnail {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 500px;
+}
+ 
+.recipe-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-ingredients {
+    flex: 2;
+}
+
+/* recipes by category page */
+.recipes-list .recipe-cards {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.recipes-list .recipe-cards .recipe-card{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(198, 160, 108);
+}
+
+.recipes-list .recipe-cards .recipe-card-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.recipes-list .recipe-cards .recipe-card img {
+    width: 300px;
+    height: auto;
+    padding-right: 15px;
+    flex-shrink: 0;
+}
+
+.recipes-list .recipe-cards .recipe-card .date {
+    margin: 10px 0;
+}
+
+/* recipe category list*/
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    background-color: rgba(198, 160, 108);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.category-item a {
+    color: rgba(93, 69, 50);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-item:hover,
+.category-item a:hover {
+    background-color: rgba(169, 116, 55);
+    color: rgba(226, 208, 182);
+}
+
+/* sidebar */
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.recipes-list {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+/* wp button */
+.wp-element-button:hover {
+    background-color: rgba(93, 69, 50) !important;
+    color: rgba(226, 208, 182) !important;
+}
+
+
+/* footer */
+#site-footer {
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(93, 69, 50);
+    color: rgba(226, 208, 182);
+    text-align: center;
+    margin-top: 27px;
+}
+
+/* @media */
+@media only screen and (max-width: 900px) {
+    #content {
+        width: 90%;
+    }
+
+    /* single */
+    .recipe-meta {
+        flex-direction: column;
+    }
+
+    .recipe-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .recipe-thumbnail {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #content {
+        width: 95%;
+    }
+
+    /* navigation */
+    #top-navi {
+        margin-top: 0;
+    }
+
+    #top-navi ul {
+        display: block;
+    }
+
+    #top-navi ul li {
+        margin: 0;
+    }
+
+    #top-navi .sub-menu {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 0.8em;
+    }
+
+    #top-navi > div > ul > li:first-child {
+        display: block;
+    }
+    
+    #top-navi > div > ul > li:not(:first-child) {
+        display: none;
+    }
+
+    /* recipes by category page */
+    .recipes-list .recipe-cards .recipe-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .recipes-list .recipe-cards .recipe-card img {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+

@@ -1,0 +1,44 @@
+.recipe-cards, .recipe-cards * {
+    box-sizing: border-box;
+}
+
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.recipe-cards .recipe-card {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.recipe-cards .recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-cards .recipe-card h2 {
+    margin: 0;
+}
+
+.recipe-cards .recipe-card .date {
+    color: rgba(169, 116, 55);
+    margin: 5px 0;
+}
+
+.recipe-cards .recipe-card .category {
+    margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .recipe-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .recipe-cards {
+        grid-template-columns: 1fr;
+    }
+}

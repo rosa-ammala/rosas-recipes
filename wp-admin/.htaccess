@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTPS_AUTHORIZATION:%{HTTPS:Authorization}]
+RewriteBase /~AB8089/wordpress2/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~AB8089/wordpress2/index.php [L]
+</IfModule>
